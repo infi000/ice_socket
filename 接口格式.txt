@@ -1,0 +1,64 @@
+1.pad登陆
+{
+    "talk_id":"ice",
+    "cmdtype":"login",
+    "from":"student123",//student+MAC地址 字符串
+    "to":"",
+    "data":""
+}
+2.教师端发送指定用户密码
+{
+    "talk_id":"ice",
+    "cmdtype":"password",
+    "from":"teacher",
+    "to":"student123",
+    "data":"123456"//密码内容 字符串
+}
+3.教师端发送指定用户绑定的pad
+{
+    "talk_id":"ice",
+    "cmdtype":"padlist",
+    "from":"teacher",
+    "to":"student123",
+    "data":""// 字符串
+}
+4.pad发送指令 推送
+{
+    "talk_id":"ice",
+    "cmdtype":"push",
+    "from":"student123",//student+MAC地址 字符串
+    "to":"",
+    "data":""
+}
+5.pad发送指令 撤销
+{
+    "talk_id":"ice",
+    "cmdtype":"undo",
+    "from":"student123",//student+MAC地址 字符串
+    "to":"",
+    "data":""
+}
+6.pad发送指令 清空
+{
+    "talk_id":"ice",
+    "cmdtype":"remove",
+    "from":"student123",//student+MAC地址 字符串
+    "to":"",
+    "data":""
+}
+7.教师端发送指定用户获取笔记
+{
+    "talk_id":"ice",
+    "cmdtype":"write_start",
+    "from":"teacher",
+    "to":"student123",
+    "data":""// 字符串
+}
+8.教师端发送指定用户结束获取笔记
+{
+    "talk_id":"ice",
+    "cmdtype":"write_end",
+    "from":"teacher",
+    "to":"student123",
+    "data":""// 字符串
+}
